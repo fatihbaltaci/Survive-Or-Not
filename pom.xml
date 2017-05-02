@@ -36,7 +36,7 @@
                             </goals>
                             <configuration>
                                 <!-- Sets the path to the file which contains the execution data. -->
-                                <destFile>workspace/**/target/jacoco.exec</destFile>
+                                <destFile>**/workspace/**/target/jacoco.exec</destFile>
                                 <!-- Sets the name of the property containing the settings for JaCoCo 
                                     runtime agent. -->
                                 <propertyName>surefireArgLine</propertyName>
@@ -52,9 +52,9 @@
                             </goals>
 							<configuration>
                                 <!-- Sets the path to the file which contains the execution data. -->
-                                <dataFile>workspace/**/target/jacoco.exec</dataFile>
+                                <dataFile>**/workspace/**/target/jacoco.exec</dataFile>
                                 <!-- Sets the output directory for the code coverage report. -->
-                                <outputDirectory>workspace/**/target/</outputDirectory>
+                                <outputDirectory>**/workspace/**/target/</outputDirectory>
                             </configuration>
                         </execution>
                     </executions>
